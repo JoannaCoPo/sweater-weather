@@ -4,13 +4,12 @@ class CurrentWeather
               :sunset,
               :temperature,
               :feels_like,
-              :humidity,  
+              :humidity,
               :uvi,
               :visibility,
               :conditions,
               :icon
   def initialize(data)
-    require "pry"; binding.pry
     @datetime = Time.at(data[:dt])
     @sunrise = Time.at(data[:sunrise])
     @sunset = Time.at(data[:sunset])
