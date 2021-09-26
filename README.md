@@ -2,7 +2,8 @@
 ![Image](https://media.giphy.com/media/wZtxnyxWTImyzpRxf1/giphy.gif)  
 [via GIPHY](https://giphy.com/embed/wZtxnyxWTImyzpRxf1)
 
-### Welcome to Sweater Weather: back-end development for an application that helps users plan road trips
+### Welcome to Sweater Weather:
+#### Back-end development for an application that helps users plan road trips
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
@@ -15,8 +16,6 @@
 ### Overview
 
 `Sweater Weather`: a product allows users to plan for road trips by seeing the current weather as well as the forecasted weather at the trip destination.
-Checkout the [Frontend repo](https://github.com/danembb/tikiarte_fe)
-
 
 #### Framework
 <p>
@@ -64,7 +63,7 @@ Checkout the [Frontend repo](https://github.com/danembb/tikiarte_fe)
 </p>
 
 
-### <ins>Contributors</ins>
+### <ins>Developers</ins>
 
 👤  **Joanna Cortes Pomeo**
 - Github: [Joanna Cortes Pomeo](https://github.com/JoannaCoPo)
@@ -145,3 +144,5 @@ COMING SOON
   * Listening on tcp://localhost:3000
   Use Ctrl-C to stop
     ```
+#### Ackowledgements
+COMING SOON
