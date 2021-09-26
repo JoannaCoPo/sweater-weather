@@ -1,7 +1,7 @@
 class OpenWeatherService
   class << self
     def get_forecast(lat,long)
-        response = connection.get("/data/2.5/onecall?lat=#{lat}&lon=#{long}&appid=#{ENV['OPEN_WEATHER_KEY']}&units=imperial")
+        response = connection.get("/data/2.5/onecall?lat=#{lat}&lon=#{long}&exclude=minutely,alerts&appid=#{ENV['OPEN_WEATHER_KEY']}&units=imperial")
         JSON.parse(response.body, symbolize_names: true)
     end
 # maybe exclude minutely as a refactor?
