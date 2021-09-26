@@ -5,7 +5,7 @@ describe 'daily weather' do
     data = OpenWeatherService.get_forecast(39.738453, -104.984853)
     forecast = Forecast.new(data)
     daily_weather = forecast.daily_weather
-# require "pry"; binding.pry
+
     expect(daily_weather[0].date).to eq('2021-09-26')
     expect(daily_weather[1].sunrise).to eq('2021-09-27 06:52:30 -0600')
     expect(daily_weather[2].sunset).to eq('2021-09-28 18:47:23 -0600')
