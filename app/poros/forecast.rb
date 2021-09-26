@@ -1,7 +1,6 @@
 class Forecast
   attr_reader :current_weather, :id
-  def initialize(data) #pass this to current_weather obj?
-    # create a current_weather poros to store all of those attributes and the call here?
+  def initialize(data)
     @current_weather = CurrentWeather.new(data[:current])
     @id = nil # id is a mandatory field in the jsonapi spec
     @daily_weather = data[:daily]
