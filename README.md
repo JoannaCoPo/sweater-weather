@@ -1,9 +1,9 @@
 # Sweater Weather
+![Image](https://media.giphy.com/media/wZtxnyxWTImyzpRxf1/giphy.gif)  
+[via GIPHY](https://giphy.com/embed/wZtxnyxWTImyzpRxf1)
 
 ### Welcome to Sweater Weather: back-end development for an application that helps users plan road trips
-<p align="left">
-  <iframe src="https://giphy.com/embed/wZtxnyxWTImyzpRxf1" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/wZtxnyxWTImyzpRxf1">via GIPHY</a></p>
-</p>
+
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
 ## Table of Contents
