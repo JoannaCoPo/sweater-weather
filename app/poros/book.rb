@@ -27,5 +27,3 @@ class Book
     }
   end
 end
-
-# need to get bookinfo and forecast for EACH book
