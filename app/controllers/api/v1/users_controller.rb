@@ -8,13 +8,9 @@ class Api::V1::UsersController < ApplicationController
       render json: user.errors, status: 400
     end
   end
-# why is :id nested before :type in reponse?
+
   private
   def user_params
-    params.permit(:email, :password, :password_confirmation, :api_key) 
+    params.permit(:email, :password, :password_confirmation, :api_key)
   end
 end
-
-# create new user in DB
-# generates a unqique api key
-# 201 status
