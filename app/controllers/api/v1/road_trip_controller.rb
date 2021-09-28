@@ -1,17 +1,12 @@
 class Api::V1::RoadTripController < ApplicationController
   def create
-    user = User.find_by(api_key: trip_params[:api_key])
+    user = User.find_by(api_key: params[:api_key])
     if user
-      road_trip = RouteFacade.get_route_info(trip_params[:origin], trip_params[:destination])
+      road_trip = RouteFacade.get_route_info(params[:origin], params[:destination])
       render json: RoadTripSerializer.new(road_trip)
     else
       render json: { errors: 'Unauthorized request' }, status: 401
     end
-  end
-
-  private
-  def trip_params
-    params.permit(:origin, :destination, :api_key)
   end
 end
 
