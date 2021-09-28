@@ -1,4 +1,4 @@
-class RoadTripInfo
+class RoadtripInfo
   attr_reader :id, :weather_at_eta, :time_to_arrival
   def initialize(route_data, weather)
     @id = nil
