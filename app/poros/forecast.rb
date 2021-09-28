@@ -2,7 +2,7 @@ class Forecast
   attr_reader :current_weather, :id
   def initialize(data)
     @current_weather = CurrentWeather.new(data[:current])
-    @id = nil # id is a mandatory field in the jsonapi spec
+    @id = nil 
     @daily_weather = data[:daily]
     @hourly_weather = data[:hourly]
   end
@@ -21,8 +21,3 @@ class Forecast
     end
   end
 end
-
-# will need:
-  # current_weather
-  # daily_weather, array of the next 5 days of daily weather data
-  # hourly_weather, array of the next 8 hours of hourly weather data

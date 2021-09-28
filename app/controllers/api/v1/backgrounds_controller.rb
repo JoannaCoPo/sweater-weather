@@ -5,6 +5,7 @@ class Api::V1::BackgroundsController < ApplicationController
 
   def initialize_serializer
     image = BackgroundFacade.get_location_image(params[:location])
+    # check if image == invalid location string
     render json: ImageSerializer.new(image)
   end
 
