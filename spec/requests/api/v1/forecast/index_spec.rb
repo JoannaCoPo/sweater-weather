@@ -18,7 +18,7 @@ describe 'forecast request' do
   end
 
   describe 'sad path' do
-    it 'returns an eror for invalid location', :vcr do
+    it 'returns an error for invalid location', :vcr do
 
       get '/api/v1/forecast?'
       # if time, add coverage for 'location='
