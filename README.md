@@ -15,7 +15,15 @@
 
 ### Overview
 
-`Sweater Weather`: a product allows users to plan for road trips by seeing the current weather as well as the forecasted weather at the trip destination.
+`Sweater Weather`: a fictional app that allows users to plan for road trips by accessing correlated weather and mapping data, providing the travel time as well as  forecasted weather for the trip destination.
+
+### Learning Goals  
+
+ - Expose an API that aggregates data from multiple external APIs
+ - Expose an API that requires an authentication token
+ - Expose an API for CRUD functionality
+ - Determine completion criteria based on the needs of other developers
+ - Research, select, and consume an API based on your needs as a developer
 
 #### Framework
 <p>
@@ -87,7 +95,7 @@
 
 1. Fork and Clone the repo
 2. Install gem packages: `bundle install`
-3. Set up the database: `rails db:{drop,create,migrate,seed}`
+3. Set up the database: `rails db:{create,migrate}`
 4. Set up [API Access]
 
 Find the [project spec here](https://backend.turing.edu/module3/projects/sweater_weather/)
