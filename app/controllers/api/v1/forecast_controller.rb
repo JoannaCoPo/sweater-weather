@@ -1,6 +1,6 @@
 class Api::V1::ForecastController < ApplicationController
   def index
-    params[:location] ? initialize_serializer : invalid_location
+    params[:location] && params[:location].length > 0 ? initialize_serializer : invalid_location
   end
 end
 

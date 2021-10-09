@@ -20,7 +20,8 @@ describe 'forecast request' do
   describe 'sad path' do
     it 'returns an error for invalid location', :vcr do
 
-      get '/api/v1/forecast?'
+      # get '/api/v1/forecast?'
+      get '/api/v1/forecast?location='
       # if time, add coverage for 'location='
 
       forecast = JSON.parse(response.body, symbolize_names: true)
