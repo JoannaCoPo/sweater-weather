@@ -4,7 +4,7 @@ RSpec.describe 'forecast facade' do
   it 'returns returns forecast data', :vcr do
     coords = GeocodingFacade.get_lat_long('denver,co')
     location = ForecastFacade.local_weather(coords.lat, coords.long)
-    
+
     expect(location).to be_a(Forecast)
     expect(location.current_weather).to be_a(CurrentWeather)
     expect(location.daily_weather[0]).to be_a(DailyWeather)
