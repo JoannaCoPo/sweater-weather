@@ -10,7 +10,7 @@ describe 'roadtrip info' do
     expect(trip.start_city).to eq('Denver, CO')
     expect(trip.end_city).to eq('Pueblo, CO')
     expect(trip.travel_time).to eq('1 hour(s), 44 minute(s)')
-    expect(trip.weather_at_eta[:temperature]).to eq(75.85)
-    expect(trip.weather_at_eta[:conditions]).to eq('broken clouds')
+    expect(trip.weather_at_eta[:temperature]).to eq(71.51)
+    expect(trip.weather_at_eta[:conditions]).to eq('clear sky')
   end
 end
