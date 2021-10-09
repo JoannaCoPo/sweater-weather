@@ -1,7 +1,7 @@
 require 'rails_helper'
 
-RSpec.describe 'forecast facade', :vcr do
-  it 'returns returns forecast data' do
+RSpec.describe 'forecast facade' do
+  it 'returns returns forecast data', :vcr do
     coords = GeocodingFacade.get_lat_long('denver,co')
     location = ForecastFacade.local_weather(coords.lat, coords.long)
 
